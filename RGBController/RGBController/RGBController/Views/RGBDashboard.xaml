@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RGBController.Views.RGBDashboard"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <StackLayout Margin="20" VerticalOptions="CenterAndExpand">
+            <Label Text="Red" />
+            <Slider
+                Maximum="255"
+                MaximumTrackColor="Red"
+                Minimum="0"
+                MinimumTrackColor="Red"
+                Value="{Binding Red}" />
+            <Label Text="Green" />
+            <Slider
+                Maximum="255"
+                MaximumTrackColor="Green"
+                Minimum="0"
+                MinimumTrackColor="Green"
+                Value="{Binding Green}" />
+            <Label Text="Blue" />
+            <Slider
+                Maximum="255"
+                MaximumTrackColor="Blue"
+                Minimum="0"
+                MinimumTrackColor="Blue"
+                Value="{Binding Blue}" />
+            <Button
+                BackgroundColor="{Binding ButtonColor}"
+                Command="{Binding SendCommand}"
+                Text="Send" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

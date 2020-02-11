@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "path": "Device"
+        }
+    ],
+    "settings": {
+        "IoTWorkbench.BoardId": "devkit",
+        "IoTWorkbench.DevicePath": "Device",
+        "IoTWorkbench.iothubConnectionString": "HostName=RGBHub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=SANA73dUSVdpPo+HBl3hjZF7bx0hZNWLRMf8eM5B8nI=",
+        "IoTWorkbench.eventHubConnectionString": "Endpoint=sb://ihsuprodhkres020dednamespace.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=SANA73dUSVdpPo+HBl3hjZF7bx0hZNWLRMf8eM5B8nI=",
+        "IoTWorkbench.eventHubConnectionPath": "iothub-ehub-rgbhub-2914888-b62f1a6ddc",
+        "IoTWorkbench.iothubDeviceConnectionString": "HostName=RGBHub.azure-devices.net;DeviceId=RGB1;SharedAccessKey=rBsht2TLzwgYjyavr0zr6oKKMQn5d12F6nCF+HlaaZU="
+    }
+}

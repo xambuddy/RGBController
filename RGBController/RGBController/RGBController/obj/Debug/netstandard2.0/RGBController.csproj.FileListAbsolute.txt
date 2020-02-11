@@ -1,0 +1,13 @@
+D:\RGBController Demo\RGBController\RGBController\RGBController\bin\Debug\netstandard2.0\RGBController.deps.json
+D:\RGBController Demo\RGBController\RGBController\RGBController\bin\Debug\netstandard2.0\RGBController.dll
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\RGBController.csprojAssemblyReference.cache
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\Views\RGBDashboard.xaml.g.cs
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\RGBController.AssemblyInfoInputs.cache
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\RGBController.AssemblyInfo.cs
+D:\RGBController Demo\RGBController\RGBController\RGBController\bin\Debug\netstandard2.0\ref\RGBController.dll
+D:\RGBController Demo\RGBController\RGBController\RGBController\bin\Debug\netstandard2.0\RGBController.pdb
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\XamlC.stamp
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\RGBController.dll
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\ref\RGBController.dll
+D:\RGBController Demo\RGBController\RGBController\RGBController\obj\Debug\netstandard2.0\RGBController.pdb
