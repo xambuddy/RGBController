@@ -8,9 +8,9 @@
 RGB_LED rgbLed;
 
 static bool hasWifi = false;
-static int rgbLEDR = 0;
-static int rgbLEDG = 0;
-static int rgbLEDB = 0;
+static int red = 0;
+static int green = 0;
+static int blue = 0;
 
 static void InitWifi()
 {
@@ -50,37 +50,37 @@ void parseTwinMessage(DEVICE_TWIN_UPDATE_STATE updateState, const char *message)
         JSON_Object *desired_object = json_object_get_object(root_object, "desired");
         if (desired_object != NULL)
         {
-          if (json_object_has_value(desired_object, "rgbLEDR"))
+          if (json_object_has_value(desired_object, "red"))
           {
-            rgbLEDR = json_object_get_number(desired_object, "rgbLEDR");
+            red = json_object_get_number(desired_object, "red");
           }
-          if (json_object_has_value(desired_object, "rgbLEDG"))
+          if (json_object_has_value(desired_object, "green"))
           {
-            rgbLEDG = json_object_get_number(desired_object, "rgbLEDG");
+            green = json_object_get_number(desired_object, "green");
           }
-          if (json_object_has_value(desired_object, "rgbLEDB"))
+          if (json_object_has_value(desired_object, "blue"))
           {
-            rgbLEDB = json_object_get_number(desired_object, "rgbLEDB");
+            blue = json_object_get_number(desired_object, "blue");
           }
         }
     }
     else
     {
-      if (json_object_has_value(root_object, "rgbLEDR"))
+      if (json_object_has_value(root_object, "red"))
       {
-        rgbLEDR = json_object_get_number(root_object, "rgbLEDR");
+        red = json_object_get_number(root_object, "red");
       }
-      if (json_object_has_value(root_object, "rgbLEDG"))
+      if (json_object_has_value(root_object, "green"))
       {
-        rgbLEDG = json_object_get_number(root_object, "rgbLEDG");
+        green = json_object_get_number(root_object, "green");
       }
-      if (json_object_has_value(root_object, "rgbLEDB"))
+      if (json_object_has_value(root_object, "blue"))
       {
-        rgbLEDB = json_object_get_number(root_object, "rgbLEDB");
+        blue = json_object_get_number(root_object, "blue");
       }
     }
 
-    rgbLed.setColor(rgbLEDR, rgbLEDG, rgbLEDB);
+    rgbLed.setColor(red, green, blue);
     
     json_value_free(root_value);
     
@@ -122,7 +122,7 @@ void setup()
 void loop()
 {
   DevKitMQTTClient_Check();
-  rgbLed.setColor(rgbLEDR, rgbLEDG, rgbLEDB);
+  rgbLed.setColor(red, green, blue);
   Screen.print(3, " > Waiting");
 
   delay(100);
