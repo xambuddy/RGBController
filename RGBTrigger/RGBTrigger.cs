@@ -40,9 +40,9 @@ namespace IotLedColorChanger.Functions
                 {
                     desired = new
                     {
-                        rgbLEDR = red,
-                        rgbLEDG = green,
-                        rgbLEDB = blue,
+                        red,
+                        green,
+                        blue
                     }
                 }
             };
